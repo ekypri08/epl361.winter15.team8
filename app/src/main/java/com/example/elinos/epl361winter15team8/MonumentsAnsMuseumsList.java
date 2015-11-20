@@ -77,6 +77,20 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
         startActivity(new Intent(MonumentsAnsMuseumsList.this, myAdapter.class));
     }
 
+    public void goBack(View v){
+        Intent intent=new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
+        startActivity(intent);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
+
+    public void goHome(View v){
+        Intent intent=new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
+        startActivity(intent);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
+
     public void exit(View v) {
         // TODO Auto-generated method stub
         finish();
