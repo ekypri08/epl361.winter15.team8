@@ -27,13 +27,13 @@
         activity_monuments_ans_museums_list
     </string>
     <string name="title_activity_path1">path1</string>
-    <string name="kornesios">\t=>Start Point:oxi Square\n
+    <string name="kornesios">Start Point:'oxi Square'\n
 \t=>Head north on Trikoupi\n
 \t=>Turn right onto Achilleos\n
 \t=>Turn left onto Areos\n
 \t=>Turn right onto Onisilou\n
 \t=>Turn left onto Xatzigiorgakis Kornesios\n
-On your right side is the House of Hadjigiorgakis Kornesios</string>
+On your right side is the 'House of Hadjigiorgakis Kornesios'</string>
 
      <string name="hamam">\t=>Turn left onto Patriarchou Gregoriou\n
 \t=>Continue onto Plaeia Tyllirias\n
