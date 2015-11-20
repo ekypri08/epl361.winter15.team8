@@ -24,12 +24,14 @@ public class MainMenu extends AppCompatActivity {
             }
         });*/
     }
-    public void yourMethodName(View v){
-        Intent intent=new Intent(MainMenu.this, MyPath.class);
+
+    public void yourMethodName(View v) {
+        Intent intent = new Intent(MainMenu.this, MyPath.class);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
+
     public void exit(View v) {
         // TODO Auto-generated method stub
         finish();

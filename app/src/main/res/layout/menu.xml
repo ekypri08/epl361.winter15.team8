@@ -8,65 +8,56 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-android:background="@drawable/menu"
+    android:background="@drawable/p1000212"
     android:clickable="true">
 
 
 
     <Button
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="280dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
         android:text="Museums and Monuments"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="1000dp"
         android:id="@+id/button"
         android:onClick="yourMethodName"
         android:shadowColor="#000000"
-        android:textSize="18dp"
+        android:textSize="32dp"
         android:longClickable="true"
-        android:background="@drawable/button_choice"
-        android:textColor="#060600"
+        android:background="@android:color/transparent"
+        android:textColor="#fff700"
         android:visibility="visible"
-        android:layout_marginTop="54dp"
-        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="280dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="1000dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
         android:text="MAP"
         android:id="@+id/button2"
-        android:textSize="20dp"
+        android:textSize="32dp"
         android:longClickable="true"
         android:clickable="true"
-        android:background="@drawable/button_choice"
-        android:textColor="#080700"
+        android:background="@android:color/transparent"
+        android:textColor="#ffee00"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button" />
+        android:layout_centerHorizontal="true"
+        android:onClick="map" />
 
     <Button
-        android:layout_width="280dp"
-        android:layout_height="50dp"
-
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
         android:text="RECOMMENDED PATHS"
         android:id="@+id/button3"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:longClickable="false"
         android:clickable="true"
-        android:textColor="#050500"
-        android:background="@drawable/button_choice"
-        android:onClick="yourMethodName"
-        android:layout_above="@+id/button4"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_marginBottom="42dp" />
+        android:textColor="#fff200"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:onClick="yourMethodName" />
 
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NICOSIA HISTORY WALKERS"
@@ -74,22 +65,18 @@ android:background="@drawable/menu"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="27dp"
-        android:textColor="#e7bc34"
-        android:textStyle="bold"/>
-
+        android:textColor="#000000"
+        android:textStyle="bold" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EXIT"
         android:id="@+id/button4"
-        android:textSize="20dp"
-        android:background="@drawable/button_choice"
-        android:onClick="exit"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:background="#ff6200"
+        android:onClick="exit" />
 
 </RelativeLayout>
