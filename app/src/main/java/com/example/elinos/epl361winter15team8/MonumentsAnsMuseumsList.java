@@ -45,7 +45,7 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
         museumsTitles=res.getStringArray(R.array.titles);
         museumsDescriptions=res.getStringArray(R.array.descriptions);
         list= (ListView) findViewById(R.id.listView);
-        myAdapter adapter = new myAdapter(this, museumsTitles, images, museumsDescriptions);
+       myAdapter adapter = new myAdapter(this, museumsTitles, images, museumsDescriptions);
         list.setAdapter(adapter);
 
     }
