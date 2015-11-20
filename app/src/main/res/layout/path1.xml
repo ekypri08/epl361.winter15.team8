@@ -84,15 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="=>Start Point:'oxi Square'
-=>Had north on ?rikoupi
-=>Turn right onto Achilleos
-=>Turn left onto Areos
-=>Turn right onto Onisilou
-=>Turn left onto Xatzigiorgakis Kornesios
-On your right side is the 'House of Hadjigiorgakis Kornesios'
-
-        "
+                android:text="@string/kornesios"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
@@ -110,10 +102,7 @@ On your right side is the 'House of Hadjigiorgakis Kornesios'
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="
-=>Turn left onto Patriarchou Gregoriou
-=>Continue onto Plaeia Tyllirias
-On your right side is the Hamam Omeriye    "
+                android:text="@string/hamam"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <ImageView
                 android:layout_below="@+id/textView4"
@@ -128,11 +117,7 @@ On your right side is the Hamam Omeriye    "
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="
-=>Turn left onto Trikoupi
-=>Slight left onto Areos
-On your left side is the Mosque Omeriye
-  "
+                android:text="@string/mosque"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <ImageView
                 android:layout_below="@+id/textView5"
@@ -148,15 +133,7 @@ On your left side is the Mosque Omeriye
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="
-=>Turn left towards Areos
-=>Turn left onto Areos
-=>Turn left onto Liasidou
-=>Turn left onto Trikoupi
-=>Slight right onto Thrakis
-=>Turn right onto Agiou Savva
-On your right side is the Agios  Savvas Church
-  "
+                android:text="@string/savvas"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <ImageView
@@ -173,12 +150,7 @@ On your right side is the Agios  Savvas Church
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="
-=>Turn right onto Aisxylou
-=>Turn left onto Sofokleous
-=>Turn right at Onasagorou
-FANEROMENI CHURCH IS ON THE LEFT!!!!
-  "
+                android:text="@string/faneromeni"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
 

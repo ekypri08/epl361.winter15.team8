@@ -27,4 +27,36 @@
         activity_monuments_ans_museums_list
     </string>
     <string name="title_activity_path1">path1</string>
+    <string name="kornesios">\t=>Start Point:'oxi Square'\n
+\t=>Head north on Trikoupi\n
+\t=>Turn right onto Achilleos\n
+\t=>Turn left onto Areos\n
+\t=>Turn right onto Onisilou\n
+\t=>Turn left onto Xatzigiorgakis Kornesios\n
+On your right side is the 'House of Hadjigiorgakis Kornesios'</string>
+
+     <string name="hamam">\t=>Turn left onto Patriarchou Gregoriou\n
+\t=>Continue onto Plaeia Tyllirias\n
+On your right side is the Hamam Omeriye</string>
+
+    <string name="mosque">\t=>Turn left onto Trikoupi\n
+\t=>Slight left onto Areos\n
+On your left side is the Mosque Omeriye</string>
+
+     <string name="savvas">\t =>Turn left towards Areos\n
+\t=>Turn left onto Areos\n
+\t=>Turn left onto Liasidou\n
+\t=>Turn left onto Trikoupi\n
+\t=>Slight right onto Thrakis\n
+\t=>Turn right onto Agiou Savva\n
+On your right side is the Agios  Savvas Church </string>
+
+    <string name="faneromeni">\t=>Turn right onto Aisxylou\n
+\t=>Turn left onto Sofokleous\n
+\t=>Turn right at Onasagorou\n
+\tFANEROMENI CHURCH IS ON THE LEFT!!!!\n
+   </string>
+
+
+
 </resources>
