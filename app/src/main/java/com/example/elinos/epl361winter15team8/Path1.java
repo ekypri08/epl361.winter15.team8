@@ -1,18 +1,19 @@
 package com.example.elinos.epl361winter15team8;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-public class MyPath extends AppCompatActivity {
+/**
+ * Created by ELINOS on 11/20/2015.
+ */
+public class Path1  extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_path);
+        setContentView(R.layout.path1);
     }
 
     @Override
@@ -35,17 +36,5 @@ public class MyPath extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    public void goback(View v){
-        Intent intent=new Intent(MyPath.this, MainMenu.class);
-        startActivity(intent);
-
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    }
-    public void goPath1(View v){
-        Intent intent=new Intent(MyPath.this, Path1.class);
-        startActivity(intent);
-
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 }

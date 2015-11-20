@@ -24,14 +24,26 @@ public class MainMenu extends AppCompatActivity {
             }
         });*/
     }
-
-    public void yourMethodName(View v) {
-        Intent intent = new Intent(MainMenu.this, MyPath.class);
+    public void goMyPath(View v){
+        Intent intent=new Intent(MainMenu.this, MyPath.class);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 
+    public void goMonumentsList(View v){
+        Intent intent=new Intent(MainMenu.this, MonumentsAnsMuseumsList.class);
+        startActivity(intent);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
+
+    public void goMap(View v){
+        Intent intent=new Intent(MainMenu.this, map.class);
+        startActivity(intent);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
     public void exit(View v) {
         // TODO Auto-generated method stub
         finish();
