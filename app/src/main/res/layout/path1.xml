@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".mypaths"
+
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="Path 1"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff5248"
+        android:textSize="27sp"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView"
+        android:background="#ffbe51"
+        android:text="HOME"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffbe51"
+        android:text="BACK"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:text="From 'oxi' Square to Faneromeni Church"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff5248"
+        android:textSize="19sp"
+        android:textStyle="bold|italic" />
+
+
+    <ScrollView
+        android:layout_below="@+id/textView2"
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/map" />
+
+
+            <TextView
+                android:layout_below="@id/imageView"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="=>Start Point:'oxi Square'
+=>Had north on ?rikoupi
+=>Turn right onto Achilleos
+=>Turn left onto Areos
+=>Turn right onto Onisilou
+=>Turn left onto Xatzigiorgakis Kornesios
+On your right side is the 'House of Hadjigiorgakis Kornesios'
+
+        "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <ImageView
+                android:layout_below="@+id/textView3"
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/q" />
+
+            <TextView
+                android:layout_below="@+id/imageView2"
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="
+=>Turn left onto Patriarchou Gregoriou
+=>Continue onto Plaeia Tyllirias
+On your right side is the Hamam Omeriye    "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <ImageView
+                android:layout_below="@+id/textView4"
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/h" />
+            <TextView
+                android:layout_below="@+id/imageView3"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="
+=>Turn left onto Trikoupi
+=>Slight left onto Areos
+On your left side is the Mosque Omeriye
+  "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <ImageView
+                android:layout_below="@+id/textView5"
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/m" />
+
+            <TextView
+                android:layout_below="@+id/imageView4"
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="
+=>Turn left towards Areos
+=>Turn left onto Areos
+=>Turn left onto Liasidou
+=>Turn left onto Trikoupi
+=>Slight right onto Thrakis
+=>Turn right onto Agiou Savva
+On your right side is the Agios  Savvas Church
+  "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:layout_below="@+id/textView6"
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/x" />
+
+            <TextView
+                android:layout_below="@+id/imageView5"
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="
+=>Turn right onto Aisxylou
+=>Turn left onto Sofokleous
+=>Turn right at Onasagorou
+FANEROMENI CHURCH IS ON THE LEFT!!!!
+  "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+            <ImageView
+                android:layout_below="@+id/textView7"
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/f" />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
