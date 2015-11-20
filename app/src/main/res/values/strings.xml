@@ -3,4 +3,27 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="titles">
+        <item>Byzantine Museum</item>
+        <item>Leventio Museum</item>
+        <item>National Struggle Museum</item>
+        <item>Motocycle Museum</item>
+        <item>Byzantine Museum</item>
+        <item>Leventio Museum</item>
+        <item>National Struggle Museum</item>
+        <item>Motocycle Museum</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item>Byzantine Museum</item>
+        <item>Leventio Museum</item>
+        <item>National Struggle Museum</item>
+        <item>Motocycle Museum</item>
+        <item>Byzantine Museum</item>
+        <item>Leventio Museum</item>
+        <item>National Struggle Museum</item>
+        <item>Motocycle Museum</item>
+    </string-array>
+    <string name="title_activity_activity_monuments_ans_museums_list">
+        activity_monuments_ans_museums_list
+    </string>
 </resources>

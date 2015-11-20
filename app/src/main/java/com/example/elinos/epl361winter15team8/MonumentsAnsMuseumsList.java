@@ -22,7 +22,8 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
     ListView list;
     String[] museumsTitles;
     String[] museumsDescriptions;
-    int[] images={R.drawable.byzantinemuseum,R.drawable.leventio,R.drawable.motorcyclemuseum,R.drawable.nationalstrugglemuseum,R.drawable.byzantinemuseum,R.drawable.leventio,R.drawable.motorcyclemuseum,R.drawable.nationalstrugglemuseum};
+    int[] images = {R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.motorcyclemuseum, R.drawable.nationalstrugglemuseum, R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.motorcyclemuseum, R.drawable.nationalstrugglemuseum};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,10 +43,10 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
         });*/
 
         Resources res = getResources();
-        museumsTitles=res.getStringArray(R.array.titles);
-        museumsDescriptions=res.getStringArray(R.array.descriptions);
-        list= (ListView) findViewById(R.id.listView);
-       myAdapter adapter = new myAdapter(this, museumsTitles, images, museumsDescriptions);
+        museumsTitles = res.getStringArray(R.array.titles);
+        museumsDescriptions = res.getStringArray(R.array.descriptions);
+        list = (ListView) findViewById(R.id.listView);
+        myAdapter adapter = new myAdapter(this, museumsTitles, images, museumsDescriptions);
         list.setAdapter(adapter);
 
     }
@@ -71,13 +72,45 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void yourMethodName(View v){
-        startActivity(new Intent(MonumentsAnsMuseumsList.this,myAdapter.class));
+
+    public void yourMethodName(View v) {
+        startActivity(new Intent(MonumentsAnsMuseumsList.this, myAdapter.class));
     }
+
     public void exit(View v) {
         // TODO Auto-generated method stub
         finish();
         System.exit(0);
     }
 
+    class myAdapter extends ArrayAdapter<String> {
+        Context context;
+        int images[];
+        String[] titleArray;
+        String[] descriptions;
+
+        public myAdapter(Context context, String[] titles, int images[], String[] desc) {
+            super(context, R.layout.activity_single_row, R.id.textView, titles);
+            this.context = context;
+            this.images = images;
+            this.titleArray = titles;
+            this.descriptions = desc;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View row = inflater.inflate(R.layout.activity_single_row, parent, false);
+            ImageView myImage = (ImageView) row.findViewById(R.id.imageView);
+            TextView myTitle = (TextView) row.findViewById(R.id.textView);
+            TextView myDescription = (TextView) row.findViewById(R.id.textView2);
+
+            myImage.setImageResource(images[position]);
+            myTitle.setText(titleArray[position]);
+            myDescription.setText(titleArray[position]);
+
+            return row;
+        }
+
+    }
 }
