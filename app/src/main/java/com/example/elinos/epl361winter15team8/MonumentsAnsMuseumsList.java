@@ -77,15 +77,15 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
         startActivity(new Intent(MonumentsAnsMuseumsList.this, myAdapter.class));
     }
 
-    public void goBack(View v){
-        Intent intent=new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
+    public void goBack(View v) {
+        Intent intent = new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 
-    public void goHome(View v){
-        Intent intent=new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
+    public void goHome(View v) {
+        Intent intent = new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -96,7 +96,7 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
         finish();
         System.exit(0);
     }
-
+}
     class myAdapter extends ArrayAdapter<String> {
         Context context;
         int images[];
@@ -126,5 +126,4 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
             return row;
         }
 
-    }
 }

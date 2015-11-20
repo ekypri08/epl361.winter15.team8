@@ -44,6 +44,7 @@
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:text="Path 1"
+        android:onClick="goPath1"
         android:id="@+id/button4"
         android:background="@drawable/a"
         android:textStyle="bold"
