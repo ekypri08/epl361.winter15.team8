@@ -12,7 +12,7 @@ public class MyPath extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_main_menu);
+        setContentView(R.layout.path1);
     }
 
     @Override
