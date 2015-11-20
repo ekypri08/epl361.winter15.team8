@@ -39,7 +39,7 @@
         android:background="#ffbe51"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
-       />
+        android:onClick="goback" />
     <Button
         android:layout_width="110dp"
         android:layout_height="50dp"
