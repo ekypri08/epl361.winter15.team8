@@ -33,7 +33,8 @@
         android:layout_alignTop="@+id/textView"
         android:background="@drawable/button_choice"
         android:text="HOME"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="home" />
 
     <Button
         android:id="@+id/button"
@@ -43,7 +44,8 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/button_choice"
         android:text="BACK"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="back" />
 
     <TextView
         android:id="@+id/textView2"

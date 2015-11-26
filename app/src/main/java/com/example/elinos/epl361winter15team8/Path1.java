@@ -1,9 +1,11 @@
 package com.example.elinos.epl361winter15team8;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 /**
  * Created by ELINOS on 11/20/2015.
@@ -22,6 +24,16 @@ public class Path1  extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_my_path, menu);
         return true;
     }
+    public void back(View v){
+        Intent intent=new Intent(Path1.this,MyPath.class);
+        startActivity(intent);
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);}
+
+
+    public void home(View v){
+        Intent intent=new Intent(Path1.this,MainMenu.class);
+        startActivity(intent);}
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
