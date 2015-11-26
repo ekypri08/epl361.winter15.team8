@@ -56,7 +56,24 @@ On your right side is the Agios  Savvas Church </string>
 \t=>Turn right at Onasagorou\n
 \tFANEROMENI CHURCH IS ON THE LEFT!!!!\n
    </string>
+    <string name="faneromeni_text">
+       The curch is dedicated to Panayia Faneromeni and was build
+        in 1872-73 on a site where, according to historical reports,
+        there once to a convent, built in the early 14th century.
+        In 193, a new bell tower was added which was later fitted
+        with bells manufactured in England in 1940-41. The magnificent
+        woud-carvediconostasis dates backto 1659.On the iconostasis is a
+        copy of an icon of Panayia Phaneromeni painted in 1924 by renowned
+        artist Adamantios Diamantis. The original icon of the Virgin Mary
+        after whichthe church is named was transferred to the Byzantine
+        museum of Arcbishop Makarios III Foundation . Among the precious
+        icons of the church are those painted by the famous Greek artist
+        Kissonergis, including the &quot;Platytera&quot; at the pulpit,
+        the &quot;Pantocrator&quot; and the four  Evagelists at the dome
 
+         </string>
+    <string name="werq">
+         </string>
 
 
 </resources>
