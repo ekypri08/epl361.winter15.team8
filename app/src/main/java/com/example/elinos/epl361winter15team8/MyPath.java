@@ -49,7 +49,7 @@ public class MyPath extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 
-    public void goPath2(View v){
+    public void gopath2(View v){
         Intent intent=new Intent(MyPath.this, path2.class);
         startActivity(intent);
 
