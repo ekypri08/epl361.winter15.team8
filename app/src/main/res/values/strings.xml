@@ -71,6 +71,30 @@
         photographic material, personal belongings of the heroes and other memorabilia
         related to the struggle ,when Cyprus fought tirelessly for the ending of British rule.
         </item>
+        <item>
+            The church stands on the corner of St.Savvas and Aeschylus streets.
+            It was built in 1850-51 on the foundations of an earlier church, probably Byzantine.
+            lt is a two aisled building with four entrances and a portico built most probably in 1900
+            when the belfry was built too. The south wall of the church most probably belongs to the
+            previous church. Though the church has no architectural interest, nevertheless it contains
+            some old portable icons as well as some old furniture. The church is monotholus built. At the
+            west end is a narthex dividing, as is often the case, the west wall of the church from the
+            boundary of the road.Inside the building a few relics from the more ancient church on the
+            site are still preserved. The modern iconostasis is of the usual character, but behind it
+            is preserved the rood from an ancient screen dated 1659. A still more interesting fragment
+            is a gilded panel about 1 m. by 50 cm., on which is painted a remarkable
+            portrait of a personage dressed in furred robes, and with a large cap of an Eastern type on his head.
+        </item>
+        <item>
+            Famagusta Gate, the most significant of the gates of Venetian Lefkosia (Nicosia), opened
+            onto the road that led to the most important harbour town of the island, hence its name.
+            It was originally known as ‘Porta Giuliana’ in honour of Giulio Savorgnano, the engineer
+            who designed and erected the Venetian walls.
+            The gate has an impressive façade and consists of a large vaulted passage with
+            a large domed room in the middle, 10.97 metres in diameter. On either side of the
+            passage are oblong rooms for the guards.
+        </item>
+
 
     </string-array>
     <string-array name="titles">
@@ -79,6 +103,15 @@
         <item>Leventio Museum</item>
         <item>National Struggle Museum</item>
         <item>Motocycle Museum</item>
+        <item>
+            Saint Savvas Church
+        </item>
+        <item>
+            Famagusta Gate
+        </item>
+        <item>
+            Famagusta Gate
+        </item>
 
     </string-array>
     <string-array name="descriptions">
