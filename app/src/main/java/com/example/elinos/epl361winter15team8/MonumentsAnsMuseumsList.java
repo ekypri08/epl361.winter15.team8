@@ -15,7 +15,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import com.example.elinos.epl361winter15team8.R;
 
 public class MonumentsAnsMuseumsList extends AppCompatActivity {

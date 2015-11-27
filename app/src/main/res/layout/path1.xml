@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/textView"
-        android:background="#ffbe51"
+        android:background="@drawable/button_choice"
         android:text="HOME"
         android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="#ffbe51"
+        android:background="@drawable/button_choice"
         android:text="BACK"
         android:textStyle="bold" />
 
