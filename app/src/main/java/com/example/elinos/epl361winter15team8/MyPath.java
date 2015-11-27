@@ -42,6 +42,10 @@ public class MyPath extends AppCompatActivity {
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
+    public void home(View v){
+        Intent intent=new Intent(MyPath.this,MainMenu.class);
+        startActivity(intent);}
+
     public void goPath1(View v){
         Intent intent=new Intent(MyPath.this, Path1.class);
         startActivity(intent);
@@ -56,5 +60,10 @@ public class MyPath extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 
+    public void goPath3(View v){
+        Intent intent=new Intent(MyPath.this, Path3.class);
+        startActivity(intent);
 
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
 }
