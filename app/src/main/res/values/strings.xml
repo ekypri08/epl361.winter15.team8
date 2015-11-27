@@ -3,7 +3,20 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string-array name="description_map">
+        <item>The curch is dedicated to Panayia Faneromeni and was build in 1872-73 on a site where, according to historical reports, there once to a convent, built in the early 14th century. In 193, a new bell tower was added which was later fitted with bells manufactured in England in 1940-41. The magnificent woud-carvediconostasis dates backto 1659.On the iconostasis is a copy of an icon of Panayia Phaneromeni painted in 1924 by renowned artist Adamantios Diamantis. The original icon of the Virgin Mary after whichthe church is named was transferred to the Byzantine museum of Arcbishop Makarios III Foundation . Among the precious icons of the church are those painted by the famous Greek artist Kissonergis, including the &quot;Platytera&quot; at the pulpit, the &quot;Pantocrator&quot; and the four  Evagelists at the dome</item>
+        <item>The Byzantine Museum located within the Archbishopric in the heart of old Nicosia, in the grounds of St. John Cathedral.
+
+The Byzantine Museum contains the richest and most representative collection of Byzantine art of the island. The core of the collection consists of 48 icons, which come from churches all over Cyprus and from the "Synodikon" of the church of Panagia Phaneromeni, which initially was intended to house the Cyprus Byzantine Museum.
+
+About 230 icons dating from 9th to the 19th century, as well as typical products of the Byzantine minor art of Cyprus, such as sacred vessels, vestments and books, are on display. They are exhibited in three large rooms in the basement of the Centre.
+
+Occupying a special place in the collection are seven fragments of the 6th century mosaics from the apse of the church of Panagia Kanakaria at Lythrankomi and 36 fragments of wall painting of the late 15th century from the church of Christ Antiphonitis at Kalogrea. These, together with icons from various looted churches in the occupied north, which were recovered following court trials or donations from abroad, bear witness to the brutal destruction of our cultural heritage and the illicit traffic of antiquities in the Turkish occupied part of Cyprus.
+
+Opening hours: Monday-Friday: 09:00-16:30 Saturday: 09:00 to 13:00.</item>
+    </string-array>
     <string-array name="titles">
+        <item>PHANEROMENI CHURCH</item>
         <item>Byzantine Museum</item>
         <item>Leventio Museum</item>
         <item>National Struggle Museum</item>
