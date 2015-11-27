@@ -7,21 +7,30 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MyPath extends AppCompatActivity {
+public class path2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_path);
+        setContentView(R.layout.activity_path2);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_my_path, menu);
+        getMenuInflater().inflate(R.menu.menu_path2, menu);
         return true;
     }
+    public void back(View v){
+        Intent intent=new Intent(path2.this,MyPath.class);
+        startActivity(intent);
 
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);}
+
+
+    public void home(View v){
+        Intent intent=new Intent(path2.this,MainMenu.class);
+        startActivity(intent);}
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -36,25 +45,4 @@ public class MyPath extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void goback(View v){
-        Intent intent=new Intent(MyPath.this, MainMenu.class);
-        startActivity(intent);
-
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    }
-    public void goPath1(View v){
-        Intent intent=new Intent(MyPath.this, Path1.class);
-        startActivity(intent);
-
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    }
-
-    public void goPath2(View v){
-        Intent intent=new Intent(MyPath.this, path2.class);
-        startActivity(intent);
-
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-    }
-
-
 }

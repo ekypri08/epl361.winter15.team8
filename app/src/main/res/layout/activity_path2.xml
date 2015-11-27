@@ -1,15 +1,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-
-    android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".mypaths"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.elinos.epl361winter15team8.path2">
 
-    >
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
     <TextView
         android:id="@+id/textView"
@@ -17,7 +16,7 @@
         android:layout_height="100dp"
         android:layout_alignBottom="@+id/button"
         android:layout_centerHorizontal="true"
-        android:text="Path 1"
+        android:text="Path 2"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#ff5248"
@@ -53,7 +52,7 @@
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
-        android:text="From 'oxi' Square to Faneromeni Church"
+        android:text="From "
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#ff5248"
@@ -174,3 +173,10 @@
     </ScrollView>
 
 </RelativeLayout>
+
+
+
+
+
+
+
