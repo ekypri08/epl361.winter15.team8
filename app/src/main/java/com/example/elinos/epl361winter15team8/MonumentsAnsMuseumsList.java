@@ -12,10 +12,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import com.example.elinos.epl361winter15team8.R;
+
+import java.util.ArrayList;
 
 public class MonumentsAnsMuseumsList extends AppCompatActivity {
     ListView list;
@@ -41,12 +44,12 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
             }
         });*/
 
-        Resources res = getResources();
+     /*   Resources res = getResources();
         museumsTitles = res.getStringArray(R.array.titles);
         museumsDescriptions = res.getStringArray(R.array.descriptions);
         list = (ListView) findViewById(R.id.listView);
         myAdapter adapter = new myAdapter(this, museumsTitles, images, museumsDescriptions);
-        list.setAdapter(adapter);
+        list.setAdapter(adapter);*/
 
     }
 
@@ -72,9 +75,7 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void yourMethodName(View v) {
-        startActivity(new Intent(MonumentsAnsMuseumsList.this, myAdapter.class));
-    }
+
 
     public void goBack(View v) {
         Intent intent = new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
@@ -96,7 +97,11 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
         System.exit(0);
     }
 }
-    class myAdapter extends ArrayAdapter<String> {
+
+
+/*
+
+class myAdapter extends ArrayAdapter<String> {
         Context context;
         int images[];
         String[] titleArray;
@@ -125,4 +130,64 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
             return row;
         }
 
+}
+*/
+
+class MyViewHolder{
+    ImageView myImage;
+    TextView myTitle;
+    TextView myDescription;
+
+    SingleRow singleRow;
+    // ArrayList<SingleRow> list;
+
+    MyViewHolder(View v){
+        // list = new ArrayList<SingleRow>();
+        //* singleRow.description = String.valueOf(v.findViewById(R.id.textView2));
+   /*     singleRow.title = String.valueOf(v.findViewById(R.id.textView));
+        singleRow.image = Integer.valueOf(String.valueOf(v.findViewById(R.id.imageView)));*/
+        myImage = (ImageView) v.findViewById(R.id.imageView);
+        myTitle = (TextView) v.findViewById(R.id.textView);
+        myDescription = (TextView) v.findViewById(R.id.textView2);
+    }
+
+}
+
+class SingleRow{
+    int image;
+    String title;
+    String description;
+    SingleRow(String title, String  description, int image){
+        this.title = title;
+        this.description = description;
+        this.image = image;
+    }
+}
+
+class customAdapter extends BaseAdapter {
+    customButtonListener custom;
+
+    public interface customButtonListener {
+        public void onButtonClickListener(int pos, Class val);
+    }
+
+    public void setCustomButtonListener(customButtonListener listener) {
+        this.custom = listener;
+    }
+
+    ArrayList<SingleRow> list;
+    Context context;
+
+    customAdapter(Context c) {
+        context = c;
+        list = new ArrayList<SingleRow>();
+        Resources res = c.getResources();
+        String[] titles = res.getStringArray(R.array.titles);
+        String[] descriptions = res.getStringArray(R.array.descriptions);
+        int[] images = {R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.motorcyclemuseum, R.drawable.nationalstrugglemuseum, R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.motorcyclemuseum, R.drawable.nationalstrugglemuseum};
+
+        for (int i = 0; i < 8; i++) {
+            list.add(new SingleRow(titles[i], descriptions[i], images[i]));
+        }
+    }
 }
