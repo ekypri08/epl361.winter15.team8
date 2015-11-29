@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class Monument extends AppCompatActivity {
     String[] museumsTitles_map;
     String[] museumsDescriptions_map;
-    int[] images_map = {R.drawable.faneromeni,R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.motorcyclemuseum, R.drawable.nationalstrugglemuseum};
+    int[] images_map = {R.drawable.faneromeni,R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.nationalstrugglemuseum, R.drawable.motorcyclemuseum,R.drawable.savvas,R.drawable.famagusta};
     public final static String key = "epl361";
     ImageView myImage;
     TextView myTitle;

@@ -61,6 +61,40 @@ public class map extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void leventio(View v) {
+        feuture=2;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
 
+    }
+    public void motorcyclemuseum(View v) {
+        feuture=3;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
+    public void national(View v) {
+        feuture=4;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
+    public void savvas(View v) {
+        feuture=5;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
+    public void famagusta(View v) {
+        feuture=6;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
 }
 
