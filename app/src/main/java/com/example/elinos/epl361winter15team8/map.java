@@ -63,6 +63,7 @@ public class map extends AppCompatActivity {
     }
     public void leventio(View v) {
         feuture=2;
+
         Intent intent = new Intent(this, Monument.class);
         intent.putExtra(key,feuture);
         startActivity(intent);
