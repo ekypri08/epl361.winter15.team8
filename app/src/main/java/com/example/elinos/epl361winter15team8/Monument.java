@@ -21,6 +21,7 @@ public class Monument extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.monument);
         Resources res = getResources();
         museumsTitles_map = res.getStringArray(R.array.titles);
