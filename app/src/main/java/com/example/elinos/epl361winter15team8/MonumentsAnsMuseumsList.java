@@ -20,7 +20,7 @@ import com.example.elinos.epl361winter15team8.R;
 
 import java.util.ArrayList;
 
-public class MonumentsAnsMuseumsList extends AppCompatActivity {
+public class MonumentsAnsMuseumsList extends AppCompatActivity implements customAdapter.customButtonListener {
     ListView list;
     String[] museumsTitles;
     String[] museumsDescriptions;
@@ -30,6 +30,11 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monuments_ans_museums_list);
+        list = (ListView) findViewById(R.id.listView);
+        customAdapter ad = new customAdapter(this);
+        list.setAdapter(ad);
+        ad.setCustomButtonListener(MonumentsAnsMuseumsList.this);
+        list.setAdapter(ad);
 
 
        /* Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -75,7 +80,13 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onButtonClickListener(int pos, Class val) {
+        Intent intent=new Intent(MonumentsAnsMuseumsList.this, val);
+        startActivity(intent);
 
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
 
     public void goBack(View v) {
         Intent intent = new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
@@ -190,4 +201,72 @@ class customAdapter extends BaseAdapter {
             list.add(new SingleRow(titles[i], descriptions[i], images[i]));
         }
     }
+
+    @Override
+    public int getCount() {
+        return list.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return list.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(final int position, View convertView, ViewGroup parent) {
+        //System.out.println(this.getItemId(position));
+        View row = convertView;
+        MyViewHolder holder = null;
+        if (row == null) {
+            System.out.println(this.getItemId(position));
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            row = inflater.inflate(R.layout.activity_single_row, parent, false);
+            holder = new MyViewHolder(row);
+            row.setTag(holder);
+        } else {
+            holder = (MyViewHolder) row.getTag();
+        }
+
+
+        TextView title = (TextView) row.findViewById(R.id.textView);
+        TextView description = (TextView) row.findViewById(R.id.textView2);
+        ImageView image = (ImageView) row.findViewById(R.id.imageView);
+//        holder.list.get(position);
+
+        SingleRow temp = list.get(position);
+        title.setText(temp.title);
+        description.setText(temp.description);
+        image.setImageResource(temp.image);
+
+        row.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                switch (position/*v.getId()*/) {
+                    case 0/*row.id.imageView*/:
+                        custom.onButtonClickListener(position, Path1.class);
+                        break;
+                    case 1/*row.id.imageView*/:
+                        custom.onButtonClickListener(position, Path1.class);
+                        break;
+                    case 2/*row.id.imageView*/:
+                        custom.onButtonClickListener(position, Path1.class);
+                        break;
+                    case 3/*row.id.imageView*/:
+                        custom.onButtonClickListener(position, Path1.class);
+                        break;
+
+                }
+            }
+        });
+
+        return row;
+
+    }
+
 }
