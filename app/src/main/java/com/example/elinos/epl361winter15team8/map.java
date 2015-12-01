@@ -1,21 +1,20 @@
 package com.example.elinos.epl361winter15team8;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-
-import android.os.Bundle;
-import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 public class map extends AppCompatActivity {
+
+    public final static String key = "epl361";
+    int feuture=0 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +31,8 @@ public class map extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+
+
     }
     public void back(View v){
         Intent intent=new Intent(map.this, MainMenu.class);
@@ -45,11 +46,56 @@ public class map extends AppCompatActivity {
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
-    public void faneromeni(View v){
-        Intent intent=new Intent(map.this, Monument.class);
+    public void faneromeni(View v) {
+        feuture=0;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key, feuture);
         startActivity(intent);
 
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+    }
+
+    public void byzantine(View v) {
+        feuture=1;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
+    public void leventio(View v) {
+        feuture=2;
+
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
+    public void motorcyclemuseum(View v) {
+        feuture=3;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
+    public void national(View v) {
+        feuture=4;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
+    public void savvas(View v) {
+        feuture=5;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
+    }
+    public void famagusta(View v) {
+        feuture=6;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key,feuture);
+        startActivity(intent);
+
     }
 }
 
