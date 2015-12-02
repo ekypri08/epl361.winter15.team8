@@ -26,6 +26,7 @@ public class Path1  extends AppCompatActivity {
     }
     public void back(View v){
         Intent intent=new Intent(Path1.this,MyPath.class);
+        System.exit(1);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);}
@@ -33,15 +34,14 @@ public class Path1  extends AppCompatActivity {
 
     public void home(View v){
         Intent intent=new Intent(Path1.this,MainMenu.class);
+        System.exit(1);
         startActivity(intent);}
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;

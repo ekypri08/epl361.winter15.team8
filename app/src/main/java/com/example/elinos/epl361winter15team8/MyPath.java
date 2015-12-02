@@ -28,22 +28,22 @@ public class MyPath extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
     public void goback(View v){
         Intent intent=new Intent(MyPath.this, MainMenu.class);
+        System.exit(1);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
     public void home(View v){
         Intent intent=new Intent(MyPath.this,MainMenu.class);
+        System.exit(1);
         startActivity(intent);}
 
     public void goPath1(View v){
