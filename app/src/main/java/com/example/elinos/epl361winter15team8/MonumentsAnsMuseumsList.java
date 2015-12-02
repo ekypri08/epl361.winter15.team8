@@ -21,6 +21,7 @@ import com.example.elinos.epl361winter15team8.R;
 import java.util.ArrayList;
 
 public class MonumentsAnsMuseumsList extends AppCompatActivity implements customAdapter.customButtonListener {
+    public final static String key = "epl361";
     ListView list;
     String[] museumsTitles;
     String[] museumsDescriptions;
@@ -82,10 +83,17 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity implements custom
 
     @Override
     public void onButtonClickListener(int pos, Class val) {
+        //Intent intent=new Intent(MonumentsAnsMuseumsList.this, val);
+       // startActivity(intent);
+
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        int feuture=pos;
         Intent intent=new Intent(MonumentsAnsMuseumsList.this, val);
+        intent.putExtra(key, feuture);
         startActivity(intent);
 
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+
     }
 
     public void goBack(View v) {
@@ -247,21 +255,22 @@ class customAdapter extends BaseAdapter {
 
             @Override
             public void onClick(View v) {
-                switch (position/*v.getId()*/) {
-                    case 0/*row.id.imageView*/:
-                        custom.onButtonClickListener(position, Path1.class);
+                /*switch (position*//*v.getId()*//*) {
+                    case 0*//*row.id.imageView*//*:
+                        custom.onButtonClickListener(position, Monument.class);
                         break;
-                    case 1/*row.id.imageView*/:
-                        custom.onButtonClickListener(position, Path1.class);
+                    case 1*//*row.id.imageView*//*:
+                        custom.onButtonClickListener(position, Monument.class);
                         break;
-                    case 2/*row.id.imageView*/:
-                        custom.onButtonClickListener(position, Path1.class);
+                    case 2*//*row.id.imageView*//*:
+                        custom.onButtonClickListener(position, Monument.class);
                         break;
-                    case 3/*row.id.imageView*/:
-                        custom.onButtonClickListener(position, Path1.class);
+                    case 3*//*row.id.imageView*//*:
+                        custom.onButtonClickListener(position, Monument.class);
                         break;
 
-                }
+                }*/
+                custom.onButtonClickListener(position, Monument.class);
             }
         });
 
