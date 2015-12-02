@@ -36,7 +36,6 @@ public class Path1  extends AppCompatActivity {
         Intent intent=new Intent(Path1.this,MainMenu.class);
         System.exit(1);
         startActivity(intent);}
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

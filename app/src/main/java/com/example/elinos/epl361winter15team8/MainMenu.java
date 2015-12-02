@@ -42,7 +42,6 @@ public class MainMenu extends AppCompatActivity {
     public void goMonumentsList(View v){
         Intent intent=new Intent(MainMenu.this, MonumentsAnsMuseumsList.class);
         startActivity(intent);
-
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 

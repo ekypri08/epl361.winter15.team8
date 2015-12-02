@@ -79,7 +79,6 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity implements custom
 
         return super.onOptionsItemSelected(item);
     }
-
     @Override
     public void onButtonClickListener(int pos, Class val) {
         Intent intent=new Intent(MonumentsAnsMuseumsList.this, val);
