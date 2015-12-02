@@ -28,7 +28,6 @@ public class path2 extends AppCompatActivity {
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);}
 
-
     public void home(View v){
         Intent intent=new Intent(path2.this,MainMenu.class);
         System.exit(1);

@@ -84,7 +84,6 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity implements custom
     public void onButtonClickListener(int pos, Class val) {
         Intent intent=new Intent(MonumentsAnsMuseumsList.this, val);
         startActivity(intent);
-
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 

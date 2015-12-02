@@ -38,7 +38,6 @@ public class map extends AppCompatActivity {
         Intent intent=new Intent(map.this, MainMenu.class);
         System.exit(1);
         startActivity(intent);
-
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
     public void home(View v){

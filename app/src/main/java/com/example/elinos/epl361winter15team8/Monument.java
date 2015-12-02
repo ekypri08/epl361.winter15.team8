@@ -64,7 +64,6 @@ public class Monument extends AppCompatActivity {
         Intent intent=new Intent(Monument.this,MainMenu.class);
         System.exit(1);
         startActivity(intent);
-
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 

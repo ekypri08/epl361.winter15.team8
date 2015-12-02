@@ -49,7 +49,6 @@ public class MainMenu extends AppCompatActivity {
     public void goMap(View v){
         Intent intent=new Intent(MainMenu.this, map.class);
         startActivity(intent);
-
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
     public void exit(View v) {
