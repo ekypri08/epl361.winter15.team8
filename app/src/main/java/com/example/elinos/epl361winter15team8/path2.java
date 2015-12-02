@@ -23,6 +23,7 @@ public class path2 extends AppCompatActivity {
     }
     public void back(View v){
         Intent intent=new Intent(path2.this,MyPath.class);
+        System.exit(1);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);}
@@ -30,6 +31,7 @@ public class path2 extends AppCompatActivity {
 
     public void home(View v){
         Intent intent=new Intent(path2.this,MainMenu.class);
+        System.exit(1);
         startActivity(intent);}
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

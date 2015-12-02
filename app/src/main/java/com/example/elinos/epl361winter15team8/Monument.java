@@ -55,12 +55,14 @@ public class Monument extends AppCompatActivity {
 
     public void back(View v){
         Intent intent=new Intent(Monument.this,map.class);
+        System.exit(1);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);}
 
     public void home(View v){
         Intent intent=new Intent(Monument.this,MainMenu.class);
+        System.exit(1);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

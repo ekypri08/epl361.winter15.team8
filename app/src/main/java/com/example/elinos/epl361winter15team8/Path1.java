@@ -26,6 +26,7 @@ public class Path1  extends AppCompatActivity {
     }
     public void back(View v){
         Intent intent=new Intent(Path1.this,MyPath.class);
+        System.exit(1);
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);}
@@ -33,6 +34,7 @@ public class Path1  extends AppCompatActivity {
 
     public void home(View v){
         Intent intent=new Intent(Path1.this,MainMenu.class);
+        System.exit(1);
         startActivity(intent);}
 
     @Override

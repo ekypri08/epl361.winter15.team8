@@ -90,23 +90,27 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity implements custom
 
     public void goBack(View v) {
         Intent intent = new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
+
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        System.exit(1);
     }
 
     public void goHome(View v) {
         Intent intent = new Intent(MonumentsAnsMuseumsList.this, MainMenu.class);
+
         startActivity(intent);
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        System.exit(1);
     }
 
-    public void exit(View v) {
+   // public void exit(View v) {
         // TODO Auto-generated method stub
-        finish();
-        System.exit(0);
-    }
+       // finish();
+       // System.exit(0);
+   // }
 }
 
 
