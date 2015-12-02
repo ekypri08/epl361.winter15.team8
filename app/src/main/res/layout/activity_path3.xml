@@ -75,6 +75,7 @@
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
                 android:background="@drawable/path3_converted"
+
                 />
 
 
