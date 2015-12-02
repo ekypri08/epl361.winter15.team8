@@ -21,6 +21,8 @@ import com.example.elinos.epl361winter15team8.R;
 import java.util.ArrayList;
 
 public class MonumentsAnsMuseumsList extends AppCompatActivity implements customAdapter.customButtonListener {
+    public final static String key = "epl361";
+    int feuture=0 ;
     ListView list;
     String[] museumsTitles;
     String[] museumsDescriptions;
@@ -82,10 +84,10 @@ public class MonumentsAnsMuseumsList extends AppCompatActivity implements custom
 
     @Override
     public void onButtonClickListener(int pos, Class val) {
-        Intent intent=new Intent(MonumentsAnsMuseumsList.this, val);
+        feuture=pos;
+        Intent intent = new Intent(this, Monument.class);
+        intent.putExtra(key, feuture);
         startActivity(intent);
-
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 
     public void goBack(View v) {
@@ -247,21 +249,22 @@ class customAdapter extends BaseAdapter {
 
             @Override
             public void onClick(View v) {
-                switch (position/*v.getId()*/) {
-                    case 0/*row.id.imageView*/:
+/*                switch (position*//*v.getId()*//*) {
+                    case 0*//*row.id.imageView*//*:
                         custom.onButtonClickListener(position, Path1.class);
                         break;
-                    case 1/*row.id.imageView*/:
+                    case 1*//*row.id.imageView*//*:
                         custom.onButtonClickListener(position, Path1.class);
                         break;
-                    case 2/*row.id.imageView*/:
+                    case 2*//*row.id.imageView*//*:
                         custom.onButtonClickListener(position, Path1.class);
                         break;
-                    case 3/*row.id.imageView*/:
+                    case 3*//*row.id.imageView*//*:
                         custom.onButtonClickListener(position, Path1.class);
                         break;
 
-                }
+                }*/
+                custom.onButtonClickListener(position, Path1.class);
             }
         });
 
