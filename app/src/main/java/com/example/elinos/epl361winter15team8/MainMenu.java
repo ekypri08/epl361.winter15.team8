@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.media.MediaPlayer;
 
 public class MainMenu extends AppCompatActivity {
 
@@ -23,6 +24,13 @@ public class MainMenu extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
+         MediaPlayer mp1;
+
+        mp1 = MediaPlayer.create(MainMenu.this, R.raw.s9223049);
+
+
+        mp1.start();
+        //mp1.reset();
     }
     public void goMyPath(View v){
         Intent intent=new Intent(MainMenu.this, MyPath.class);
