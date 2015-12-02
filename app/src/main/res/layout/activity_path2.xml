@@ -52,7 +52,7 @@
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
-        android:text="From "
+        android:text="From Famagusta Gate to Archibishop's Palace "
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#ff5248"
@@ -76,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/map3"
+                android:background="@drawable/path2_converted"
                 />
 
 
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="@string/kornesios"
+                android:text="@string/famagustagate"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/q" />
+                android:background="@drawable/famagustagate" />
 
             <TextView
                 android:layout_below="@+id/imageView2"
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="@string/hamam"
+                android:text="@string/agalma"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <ImageView
                 android:layout_below="@+id/textView4"
@@ -112,14 +112,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/h" />
+                android:background="@drawable/statue-of-liberty-lefkosia-nicosia-cyprus" />
             <TextView
                 android:layout_below="@+id/imageView3"
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="@string/mosque"
+                android:text="@string/aisgiannis"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <ImageView
                 android:layout_below="@+id/textView5"
@@ -127,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/m" />
+                android:background="@drawable/aisgiannis" />
 
             <TextView
                 android:layout_below="@+id/imageView4"
@@ -135,7 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="@string/savvas"
+                android:text="@string/vizantino"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <ImageView
@@ -144,7 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/savvas" />
+                android:background="@drawable/Byzantine-Museum" />
 
             <TextView
                 android:layout_below="@+id/imageView5"
@@ -152,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="@string/faneromeni"
+                android:text="@string/arxiepiskopi"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
@@ -163,7 +163,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/f" />
+                android:background="@drawable/arxiepiskopi" />
 
 
 

@@ -163,5 +163,42 @@ On your right side is the Agios  Savvas Church </string>
     <string name="title_activity_path2">path2</string>
     <string name="title_activity_path3">Path3</string>
 
+ <string name="famagustagate">\t =>You are in front of Famagusta Gate!\n
+     </string>
+
+<string name="agalma">\t=>Continue onto Nikiforou Foka\n
+On your left side is the Statue of Liberty!\n
+ </string>
+
+  <string name="aisgiannis">\t =>Turn right onto Adamantiou Korai\n
+      On your left side is St John Cathedral! </string>
+
+    <string name="vizantino">
+\t=>Turn right onto Archbishop's Kyprianou Square \n
+\t=>Turn left onto Apostolou Varnava\n
+On your left side is the Byzantine Museum! </string>
+
+
+      <string name="arxiepiskopi">\t=>Turn left onto Isakiou Komninou\n
+\tARCHIBISHOP'S PALACE IS ON THE LEFT!!!!\n
+   </string>
+
+
+    <string name="agiasophia">\t =>You are in front of Saint Sophia Cathedral!\n
+     </string>
+
+    <string name="xani">\t=>Head south on Kuyumcular Sk toward Arasta Sk\n
+        \t=>Turn right onto Arasta Sk\n
+On your left side is the Buyuk Han!\n
+ </string>
+
+    <string name="kyreniagate">
+\tContinue onto Arasta Sk \n
+\t=>Turn right onto Asmaaltı Sk\n
+        \t=>  Slight right onto Girne Cd \n
+KYRENIA GATE IS ON YOUR LEFT!!!! </string>
+
 
 </resources>
+
+
