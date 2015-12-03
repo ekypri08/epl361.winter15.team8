@@ -25,7 +25,7 @@ public class Path1  extends AppCompatActivity {
         return true;
     }
     public void back(View v){
-        Intent intent=new Intent(Path1.this,MyPath.class);
+        Intent intent=new Intent(Path1.this,MainMenu.class);
         System.exit(1);
         startActivity(intent);
 

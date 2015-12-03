@@ -22,7 +22,7 @@ public class path2 extends AppCompatActivity {
         return true;
     }
     public void back(View v){
-        Intent intent=new Intent(path2.this,MyPath.class);
+        Intent intent=new Intent(path2.this,MainMenu.class);
         System.exit(1);
         startActivity(intent);
 

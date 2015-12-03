@@ -197,9 +197,9 @@ class customAdapter extends BaseAdapter {
         Resources res = c.getResources();
         String[] titles = res.getStringArray(R.array.titles);
         String[] descriptions = res.getStringArray(R.array.descriptions);
-        int[] images = {R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.motorcyclemuseum, R.drawable.nationalstrugglemuseum, R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.motorcyclemuseum, R.drawable.nationalstrugglemuseum};
+        int[] images = {R.drawable.faneromeni, R.drawable.byzantinemuseum, R.drawable.leventio, R.drawable.nationalstrugglemuseum, R.drawable.motorcyclemuseum, R.drawable.savvas, R.drawable.famagusta};
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 7; i++) {
             list.add(new SingleRow(titles[i], descriptions[i], images[i]));
         }
     }
@@ -224,7 +224,7 @@ class customAdapter extends BaseAdapter {
         //System.out.println(this.getItemId(position));
         View row = convertView;
         MyViewHolder holder = null;
-        if (row == null) {
+        if (row == null) {  // for optimization
             System.out.println(this.getItemId(position));
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(R.layout.activity_single_row, parent, false);

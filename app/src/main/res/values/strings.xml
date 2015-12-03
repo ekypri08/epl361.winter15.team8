@@ -103,26 +103,18 @@
         <item>Leventio Museum</item>
         <item>National Struggle Museum</item>
         <item>Motocycle Museum</item>
-        <item>
-            Saint Savvas Church
-        </item>
-        <item>
-            Famagusta Gate
-        </item>
-        <item>
-            Famagusta Gate
-        </item>
+        <item>Saint Savvas Church</item>
+        <item>Famagusta Gate</item>
 
     </string-array>
     <string-array name="descriptions">
+        <item>Phaneromeni Church</item>
         <item>Byzantine Museum</item>
         <item>Leventio Museum</item>
         <item>National Struggle Museum</item>
         <item>Motocycle Museum</item>
-        <item>Byzantine Museum</item>
-        <item>Leventio Museum</item>
-        <item>National Struggle Museum</item>
-        <item>Motocycle Museum</item>
+        <item>Saint Savvas Church</item>
+        <item>Famagusta Gate</item>
     </string-array>
     <string name="title_activity_activity_monuments_ans_museums_list">
         activity_monuments_ans_museums_list
@@ -174,13 +166,14 @@ On your left side is the Statue of Liberty!\n
       On your left side is St John Cathedral! </string>
 
     <string name="vizantino">
-\t=>Turn right onto Archbishop's Kyprianou Square \n
+\t=>Turn right onto Archbishop Kyprianou Square \n
 \t=>Turn left onto Apostolou Varnava\n
 On your left side is the Byzantine Museum! </string>
 
 
-      <string name="arxiepiskopi">\t=>Turn left onto Isakiou Komninou\n
-\tARCHIBISHOP'S PALACE IS ON THE LEFT!!!!\n
+      <string name="arxiepiskopi">
+          \t=>Turn left onto Isakiou Komninou\n
+   ARCHIBISHOP PALACE IS ON THE LEFT!!!!\n
    </string>
 
 

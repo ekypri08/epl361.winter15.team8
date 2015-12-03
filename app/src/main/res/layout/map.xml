@@ -39,7 +39,7 @@
             android:icon="@drawable/red_map"
             android:clickable="true"
             android:contextClickable="false"
-            android:background="@drawable/yellow_map"
+            android:background="@drawable/yellowmap"
             android:layout_marginBottom="182dp"
             android:layout_above="@+id/button5"
             android:layout_toLeftOf="@+id/button5"
@@ -74,7 +74,7 @@
             android:layout_width="20dp"
             android:layout_height="40dp"
             android:id="@+id/imageButton4"
-            android:background="@drawable/yellow_map"
+            android:background="@drawable/yellowmap"
             android:layout_marginTop="23dp"
             android:layout_alignTop="@+id/imageButton"
             android:layout_alignRight="@+id/button6"
@@ -85,7 +85,7 @@
             android:layout_width="20dp"
             android:layout_height="40dp"
             android:id="@+id/imageButton5"
-            android:background="@drawable/yellow_map"
+            android:background="@drawable/yellowmap"
             android:layout_marginLeft="62dp"
             android:layout_marginStart="62dp"
             android:layout_below="@+id/imageButton3"
@@ -239,7 +239,7 @@
             android:layout_above="@+id/imageButton8"
             android:layout_toLeftOf="@+id/imageButton10"
             android:layout_toStartOf="@+id/imageButton10"
-            android:background="@drawable/yellow_map" />
+            android:background="@drawable/yellowmap" />
 
         <ImageButton
             android:layout_width="20dp"
@@ -248,7 +248,7 @@
             android:layout_alignBottom="@+id/imageButton15"
             android:layout_toLeftOf="@+id/imageButton16"
             android:layout_toStartOf="@+id/imageButton16"
-            android:background="@drawable/yellow_map"
+            android:background="@drawable/yellowmap"
             android:onClick="national" />
 
 

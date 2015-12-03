@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/famagustagate" />
+                android:background="@drawable/famagusta" />
 
             <TextView
                 android:layout_below="@+id/imageView2"
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/statue-of-liberty-lefkosia-nicosia-cyprus" />
+                android:background="@drawable/statueoflibertylefkosianicosiacyprus" />
             <TextView
                 android:layout_below="@+id/imageView3"
                 android:id="@+id/textView5"
@@ -127,7 +127,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/aisgiannis" />
+                android:background="@drawable/saintjohn" />
 
             <TextView
                 android:layout_below="@+id/imageView4"
@@ -144,7 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/Byzantine-Museum" />
+                android:background="@drawable/byzantinemuseum1" />
 
             <TextView
                 android:layout_below="@+id/imageView5"

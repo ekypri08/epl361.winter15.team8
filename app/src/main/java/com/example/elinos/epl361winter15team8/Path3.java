@@ -28,6 +28,7 @@ public class Path3 extends AppCompatActivity {
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);}
     public void home(View v){
+
         Intent intent=new Intent(Path3.this,MainMenu.class);
         System.exit(1);
         startActivity(intent);}
