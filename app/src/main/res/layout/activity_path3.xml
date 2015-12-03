@@ -50,7 +50,7 @@
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
-        android:text="From 'oxi' Square to Faneromeni Church"
+        android:text="From Saint Sophia Cathedral to Kyrenia Gate"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#ff5248"
@@ -74,7 +74,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/map3"
+                android:background="@drawable/path3_converted"
+
                 />
 
 
@@ -84,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="@string/kornesios"
+                android:text="@string/agiasophia"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
@@ -94,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/q" />
+                android:background="@drawable/agiasofia" />
 
             <TextView
                 android:layout_below="@+id/imageView2"
@@ -102,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="@string/hamam"
+                android:text="@string/xani"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <ImageView
                 android:layout_below="@+id/textView4"
@@ -110,14 +111,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/h" />
+                android:background="@drawable/xani" />
             <TextView
                 android:layout_below="@+id/imageView3"
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:text="@string/mosque"
+                android:text="@string/kyreniagate"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
             <ImageView
                 android:layout_below="@+id/textView5"
@@ -125,43 +126,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="500dp"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/m" />
-
-            <TextView
-                android:layout_below="@+id/imageView4"
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:text="@string/savvas"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-            <ImageView
-                android:layout_below="@+id/textView6"
-                android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="500dp"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/savvas" />
-
-            <TextView
-                android:layout_below="@+id/imageView5"
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:text="@string/faneromeni"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:background="@drawable/kyreniagate" />
 
 
 
-            <ImageView
-                android:layout_below="@+id/textView7"
-                android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="500dp"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/f" />
 
 
 
