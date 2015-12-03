@@ -8,6 +8,9 @@ import android.view.View;
 import android.media.MediaPlayer;
 
 public class MainMenu extends AppCompatActivity {
+public     MediaPlayer mp1;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +27,18 @@ public class MainMenu extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });*/
-         MediaPlayer mp1;
+//         MediaPlayer mp1;
 
         mp1 = MediaPlayer.create(MainMenu.this, R.raw.s9223049);
-
+try{mp1.prepare();}
+        catch(Exception e ){}
 
         mp1.start();
         //mp1.reset();
     }
     public void goMyPath(View v){
+        mp1.stop();
+        mp1.reset();
         Intent intent=new Intent(MainMenu.this, MyPath.class);
         startActivity(intent);
 
@@ -40,12 +46,16 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void goMonumentsList(View v){
+        mp1.stop();
+        mp1.reset();
         Intent intent=new Intent(MainMenu.this, MonumentsAnsMuseumsList.class);
         startActivity(intent);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
     }
 
     public void goMap(View v){
+        mp1.stop();
+        mp1.reset();
         Intent intent=new Intent(MainMenu.this, map.class);
         startActivity(intent);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
